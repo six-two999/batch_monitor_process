@@ -1,6 +1,6 @@
 @echo off
 :loop
-tasklist | find "CommunicationSoftware.exe"
-if errorlevel == 1 call "CommunicationSoftware.exe"
+tasklist | find "%process%"
+if errorlevel == 1 call "%process%"
 timeout /T 3
 goto loop
